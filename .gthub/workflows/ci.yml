@@ -26,3 +26,6 @@ jobs:
 
     -name: Run tests (placeholder)
     run: echo "add your test here"
+
+    -name: Build Docker image
+    run: docker build -t flask-todo-app .
