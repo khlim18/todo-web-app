@@ -36,4 +36,4 @@ if __name__ == '__main__':
     conn = get_db_connecton()
     conn.execute('create table if not exists todos (id integer primary key, task text)')
     conn.close()
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
